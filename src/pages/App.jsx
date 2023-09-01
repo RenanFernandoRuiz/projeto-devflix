@@ -34,13 +34,25 @@ const App = () => {
     // fetch(apiUrl).then((response) => response.json()).then((data) => console.log(data));
     return (
         <div id="app">
-            <div className="logo">
-                <img src={logo} alt="logo devflix" />
-            </div>
+            <div className="logo">DEVFLIX</div>
             <div className="search">
                 <input value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} onKeyDown={handlekeyPress} placeholder="Pesquise por filmes" />
-                <img src={searchIcon} alt="Icone de pesquisa" onClick={() => searchMovies(searchTerm)} />
+
+                <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 90 90" fill="none">
+                <path d="M15 22.5H75V30H15V22.5ZM15 41.25H75V48.75H15V41.25ZM75 60H15V67.5H75V60Z" fill="white"/>
+            </svg>
             </div>
+
+                <img src={searchIcon} alt="Icone de pesquisa" onClick={() => searchMovies(searchTerm)}  />
+
+            </div>
+
+
+    
+
+
+
             {movies?.length > 0 ? (
                 <div className="container">
                     {movies.map((movie) => (<MovieCard key={movie.imdbID} movies={movie} />))}
@@ -50,7 +62,7 @@ const App = () => {
                     <h2>Nenhum filme encontrado 😔</h2>
                 </div>
             )}
-            <Footer link={"https:github.com.br"}>RenanRuiz</Footer>
+            <Footer link={"https:github.com.br"}></Footer>
         </div>
     );
 };

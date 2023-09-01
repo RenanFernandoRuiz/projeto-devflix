@@ -10,12 +10,11 @@ const Footer = ({ children, link }) => {
     return (
         <footer>
             <p>
-                Feito com <ion-icon name="heart" /> por {""}
+                
                 <a href={link} target="_blank">{children}</a>
             </p>
             <SocialLinks icon={"logo-github"} href={"#"} />
             <SocialLinks icon={"logo-instagram"} href={"#"} />
-            <SocialLinks icon={"logo-linkedin"} href={"#"} />
             <SocialLinks icon={"logo-twitter"} href={"#"} />
             <SocialLinks icon={"logo-facebook"} href={"#"} />
             
