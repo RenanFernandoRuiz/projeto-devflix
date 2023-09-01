@@ -37,15 +37,17 @@
     object-fit: cover;
 }
 
+
 .movie div:nth-of-type(3) {
     z-index: 2;
-    background: #343739;
+    background: #343739; 
+    
 
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 16px 24px 24px;
+    padding: 16px 30px 24px;
 }
 
 .movie div:nth-of-type(3) span {
